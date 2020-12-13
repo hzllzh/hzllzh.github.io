@@ -1,0 +1,117 @@
+.menu_container {
+    color: #fff;
+    position: relative;
+    z-index: 20;
+    .menu_title {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #202629;
+        height: 0.98rem;
+
+        .menu_logo {
+            float: left;
+            margin: 0.13rem 0 0 0.28rem;
+
+            img {
+                width: 1.59rem;
+                height: 0.5rem;
+                display: block;
+            }
+        }
+
+        /* 开关 */
+        .menu_switch {
+            float: right;
+            width: 0.44rem;
+            height: 0.02rem;
+            margin-right: 0.2rem;
+            margin-top: 0.5rem;
+            background: #fff;
+            transition: 0.5s;
+
+            &::before {
+                content: "";
+                display: block;
+                height: 0.02rem;
+                background: #fff;
+                margin-top: -0.08rem;
+                transition: 0.5s;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                height: 0.02rem;
+                background: #fff;
+                margin-top: 0.14rem;
+                transition: 0.5s;
+            }
+
+            &.menu_switch--expand {
+                background: transparent;
+
+                &::before {
+                    transition: 0.5s;
+                    margin-top: 0;
+                    transform: rotateZ(45deg);
+                    background: #BC3129;
+                }
+
+                &::after {
+                    transition: 0.5s;
+                    margin-top: 0.016rem;
+                    transform: rotateZ(-45deg);
+                    background: #BC3129;
+                }
+            }
+        }
+
+        .menu_attend {
+            float: right;
+            width: 1.4rem;
+            height: 0.51rem;
+            line-height: 0.51rem;
+            text-align: center;
+            font-size: 0.24rem;
+            border: 3px #ffe537 solid;
+            margin-top: 0.15rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .menu_nav {
+        position: fixed;
+        top: 0.98rem;
+        height: 0;
+        width: 0;
+        font-size: 0.3rem;
+        background: #1e1e1e;
+        right: 0;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s;
+
+        li{
+            border-top: 1px solid #2c2c2c;
+            height: 1.36rem;
+            line-height: 1.36rem;
+            overflow: hidden;
+        }
+
+        &.menu_nav--expand{
+            opacity: 1;
+            position: fixed;
+            top: 0.98rem;
+            height: 100%;
+            width: 100%;
+            font-size: 0.3rem;
+            background: #1e1e1e;
+            right: 0;
+            text-align: center;
+            transition: 0.5s;
+        }
+    }
+
+}

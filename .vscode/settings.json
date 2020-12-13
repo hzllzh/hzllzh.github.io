@@ -1,0 +1,5 @@
+{
+    "compile-hero.javascript-output-toggle": false,
+    "compile-hero.less-output-directory": "./",
+    "compile-hero.disable-compile-files-on-did-save-code": false
+}
