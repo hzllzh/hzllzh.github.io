@@ -105,13 +105,13 @@
   margin: 0.5rem 0.3rem;
 }
 .game_container .game_footer .game_riot {
-  background-position: 0 -0.64rem;
   width: 1.37rem;
   height: 0.42rem;
   float: none;
   display: inline-block;
   background: url(../assets/footer_logo.png) no-repeat;
   background-size: 2.74rem 1.16rem;
+  background-position: 0 -0.64rem;
   vertical-align: middle;
   margin: 0.5rem 0.3rem;
 }
